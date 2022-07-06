@@ -81,7 +81,7 @@ using namespace esphome;
         line += "} " + _text;
       }
 
-      ESP_LOGD("main", line.c_str());
+      ESP_LOGI("main", line.c_str());
 
     }
   };
@@ -92,7 +92,7 @@ using namespace esphome;
     // active, and any debug statements will be lost. The logger 
     // seems to use mqtt, when that is the active comm unit, and
     // until that is setup nothing will be logged.
-    bool emit_on = false;
+    bool emit_on = true;
     int level = 0;
 
     void api_enter(const char* api_name, ...) {
