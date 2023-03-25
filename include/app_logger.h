@@ -81,7 +81,7 @@ using namespace esphome;
         line += "} " + _text;
       }
 
-      ESP_LOGI("main", line.c_str());
+      //ESP_LOGI("main", line.c_str());
 
     }
   };
